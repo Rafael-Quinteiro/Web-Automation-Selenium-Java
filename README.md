@@ -51,6 +51,7 @@ Além disso, ele tem como propósito **ajudar pessoas que desejam aprender autom
 
 ## 📁 Arquitetura do Projeto
 
+```
 src
 └── test
 ├── java
@@ -95,6 +96,7 @@ src
 │
 └── resources
 └── config.properties
+```
 
 ---
 
