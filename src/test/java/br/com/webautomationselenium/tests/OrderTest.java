@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import com.aventstack.extentreports.ExtentTest;
 
@@ -16,6 +17,7 @@ import br.com.webautomationselenium.global.Constants;
 import br.com.webautomationselenium.interactions.LoginInteractions;
 import br.com.webautomationselenium.interactions.OrderInteractions;
 import br.com.webautomationselenium.report.SparkReporterUtil;
+import br.com.webautomationselenium.suits.AllSmokeTests;
 import br.com.webautomationselenium.utils.MetodoBaseUtil;
 
 /**
@@ -143,6 +145,7 @@ public class OrderTest extends BaseTest {
      * TC001 - Create order using registered address.
      */
     @Test
+    @Category({AllSmokeTests.class})
     public void TC001_should_Create_Order_With_Registered_Address() {
 
         String testDescription = "TC001 - Should create an order using the registered address";
@@ -173,6 +176,7 @@ public class OrderTest extends BaseTest {
      * TC002 - Create order using default address.
      */
     @Test
+    @Category({AllSmokeTests.class})
     public void TC002_should_Create_Order_With_Default_Address() {
 
         String testDescription = "TC002 - Should create an order using the default address";
@@ -217,6 +221,7 @@ public class OrderTest extends BaseTest {
      * TC003 - Create order using new billing address.
      */
     @Test
+    @Category({AllSmokeTests.class})
     public void TC003_should_Create_Order_With_New_AddressData() {
 
         String testDescription = "TC003 - Should create an order using new address data";

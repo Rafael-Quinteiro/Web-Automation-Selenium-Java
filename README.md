@@ -85,6 +85,12 @@ src
 │ ├── report
 │ │ └── SparkReporterUtil.java
 │ │
+│ ├── runners
+│ │ └── AllSmokeTestsRunner.java
+│ │
+│ ├── suits
+│ │ └── AllSmokeTests.java
+│ │
 │ ├── tests
 │ │ ├── LoginTest.java
 │ │ └── OrderTest.java
@@ -164,6 +170,18 @@ Contém **métodos utilitários reutilizáveis** pelo projeto:
 - Datas
 - Manipulação de arquivos
 - Funções genéricas de apoio
+
+---
+
+### 🏃 runners
+Contém os **test runners** responsáveis por executar os testes:
+- **AllSmokeTestsRunner**: Executor de suítes de testes automatizadas utilizando JUnit Categories
+
+---
+
+### 📋 suits
+Define as **categorias de testes** para organização e execução:
+- **AllSmokeTests**: Interface de marcação (marker interface) utilizada para categorizar testes smoke automatizados
 
 ---
 
